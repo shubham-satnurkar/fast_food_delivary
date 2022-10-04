@@ -1,0 +1,12 @@
+// Imports
+// Base Css reset css
+@import '../scss/base/_base-dir';
+
+// Abstracts Css Mixin, Variables, font-families
+@import '../scss/abstracts/_abstracts-dir'; 
+
+// layouts css
+@import '../scss/layout/_layout-dir';
+
+// Components
+@import '../scss/components/_component-dir'

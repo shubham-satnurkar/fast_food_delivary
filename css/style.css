@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, ::after, ::before {
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.container-fluid {
+  width: 100%;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2.5rem; }
+
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 1.5rem; }
+
+h5 {
+  font-size: 1.25rem; }
+
+h6 {
+  font-size: 1rem; }
+
+p {
+  font-size: 1rem; }
+
+.img-fluid {
+  width: 100%; }
+
+.active {
+  display: block !important; }
+
+.heading {
+  text-align: center; }
+  .heading .sub-heading_title {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #FF6600;
+    font-size: 2.5rem;
+    line-height: 45px; }
+    .heading .sub-heading_title .title-color {
+      color: #000; }
+  .heading .sub-heading_text {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #000;
+    font-size: 1.25rem;
+    line-height: 25px; }
+
+.header {
+  width: 100%;
+  position: relative; }
+  .header > .img-fluid {
+    object-fit: cover;
+    height: 100vh; }
+  .header .img-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); }
+    .header .img-overlay .navbar {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-between; }
+      .header .img-overlay .navbar-toggler {
+        background-color: #FF6600;
+        border: none;
+        font-size: 1.625rem;
+        padding: 5px 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 6px rgba(238, 126, 15, 0.56);
+        color: #fff;
+        cursor: pointer;
+        display: none;
+        position: relative;
+        z-index: 999; }
+        @media screen and (max-width: 991px) {
+          .header .img-overlay .navbar-toggler {
+            display: block; } }
+      .header .img-overlay .navbar-brand {
+        text-decoration: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px 0; }
+        .header .img-overlay .navbar-brand .img-fluid {
+          width: 150px; }
+      @media screen and (max-width: 991px) {
+        .header .img-overlay .navbar-collapse {
+          display: none;
+          position: fixed;
+          top: 0;
+          right: 0;
+          width: 70%;
+          height: 100vh;
+          padding: 50px;
+          z-index: 9;
+          background-color: #fff; }
+          .header .img-overlay .navbar-collapse .navbar-nav {
+            flex-direction: column;
+            align-items: flex-start; }
+            .header .img-overlay .navbar-collapse .navbar-nav .nav-item {
+              margin: 10px 0 20px; }
+              .header .img-overlay .navbar-collapse .navbar-nav .nav-item .nav-link {
+                color: #000; } }
+      .header .img-overlay .navbar-nav {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px; }
+        .header .img-overlay .navbar-nav .nav-item {
+          margin-left: 10px; }
+          .header .img-overlay .navbar-nav .nav-item .nav-link {
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 20px;
+            font-family: "Josefin Sans", sans-serif; }
+            .header .img-overlay .navbar-nav .nav-item .nav-link:hover {
+              color: #FF6600; }
+    .header .img-overlay .banner-heading {
+      width: 50%;
+      padding: 70px 0 30px; }
+      .header .img-overlay .banner-heading_title {
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 1000;
+        margin-bottom: 20px;
+        color: #000;
+        font-size: 7rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        color: #FF6600;
+        filter: drop-shadow(0 3px 6px rgba(238, 126, 15, 0.5)); }
+        .header .img-overlay .banner-heading_title .small-title {
+          display: flex;
+          flex-direction: column;
+          font-size: 2rem;
+          color: #fff;
+          gap: 10px;
+          filter: drop-shadow(0 3px 6px rgba(255, 255, 255, 0.5)); }
+      .header .img-overlay .banner-heading_text {
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 300;
+        margin-bottom: 30px;
+        color: #000;
+        font-size: 1.25rem;
+        line-height: 25px;
+        color: #fff; }
+    .header .img-overlay .arrow-btn {
+      width: 100%;
+      text-align: center; }
+      .header .img-overlay .arrow-btn .btn-scroll_down {
+        color: #000;
+        background-color: #fff;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 1.25rem;
+        display: inline-block;
+        animation: move 2s linear .3s infinite alternate-reverse;
+        cursor: pointer; }
+
+@keyframes move {
+  from {
+    transform: translateY(0); }
+  to {
+    transform: translateY(-20px); } }
+        .header .img-overlay .arrow-btn .btn-scroll_down:hover {
+          background-color: #FF6600;
+          box-shadow: 0 0 6px rgba(238, 126, 15, 0.56);
+          color: #fff; }
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-wrap: wrap;
+  gap: 15px; }
+
+col {
+  width: auto;
+  flex: 0 0 auto; }
+
+.col-12 {
+  width: 100%;
+  flex: 0 0 100%; }
+
+.col-6 {
+  width: 48%;
+  flex: 0 0 48%; }
+
+.col-4 {
+  width: 33%;
+  flex: 0 0 32%; }
+
+.col-3 {
+  width: 23%;
+  flex: 0 0 23%; }
+
+.btn {
+  color: #fff;
+  background-color: #262222;
+  font-size: 1.25rem;
+  padding: 15px 35px;
+  border-radius: 25px;
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 0 6px rgba(238, 126, 15, 0.56); }
+  .btn:hover {
+    background-color: #FF6600;
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.5); }
+
+.about-us {
+  width: 100%;
+  padding: 70px 0 50px; }
+  .about-us .block {
+    padding: 15px;
+    margin-bottom: 20px; }
+    .about-us .block .info-heading {
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #FF6600;
+      font-size: 2.5rem;
+      line-height: 45px;
+      font-size: 2rem; }
+      .about-us .block .info-heading .title-color {
+        color: #000; }
+    .about-us .block .info-text {
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 300;
+      margin-bottom: 30px;
+      color: #000;
+      font-size: 1.25rem;
+      line-height: 25px; }

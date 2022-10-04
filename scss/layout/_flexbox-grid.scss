@@ -1,0 +1,31 @@
+.row{
+    @include flexbox;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+col{
+    width: auto;
+    flex: 0 0 auto;
+      
+}
+.col-12{
+    width: 100%;
+    flex:  0 0 100%;
+    
+}
+.col-6{
+    width: 48%;
+    flex:  0 0 48%;
+    
+}
+.col-4{
+    width: 33%;
+    flex:  0 0 32%;
+    
+}
+.col-3{
+    width: 23%;
+    flex:  0 0 23%;
+    
+}
+

@@ -1,0 +1,16 @@
+.btn{
+    color:$white;
+    background-color: $btn-default;
+    font-size: 1.25rem;
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-family: $josef;
+    text-decoration: none;
+    display: inline-block;
+    @include box-shadow;
+
+    &:hover{
+        background-color: $hover-color;
+        box-shadow: 0 0 5px rgba($hover-color, .5);
+    }
+}

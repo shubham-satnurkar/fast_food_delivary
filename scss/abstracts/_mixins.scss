@@ -1,0 +1,71 @@
+// FlexBox
+@mixin flexbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@mixin box-shadow {
+    box-shadow: 0 0 6px rgba(238, 126, 15, 0.56);
+}
+
+@mixin heading-title {
+    font-family: $josef;
+    font-weight: 1000;
+    margin-bottom: 20px;
+    color: $black;
+}
+
+@mixin para-text {
+    font-family: $josef;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: $black;
+    font-size: 1.25rem;
+    line-height: 25px;
+}
+
+
+@mixin navbar-toogler {
+    background-color: $theme-color;
+    border: none;
+    font-size: 1.625rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    @include box-shadow;
+    color: $white;
+    cursor: pointer;
+}
+
+@mixin sub-heading {
+    font-family: $josef;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: $heading-color;
+    font-size: 2.5rem;
+    line-height: 45px;
+    .title-color{color: $black;}
+
+}
+
+.active {
+    display: block !important;
+}
+
+.heading{
+    text-align: center;
+    .sub-heading_title{
+        @include sub-heading;
+    }
+    .sub-heading_text{
+        @include para-text;
+    }
+}
+
+@mixin content-heading{
+    @include sub-heading;
+    font-size: 2rem;
+}
