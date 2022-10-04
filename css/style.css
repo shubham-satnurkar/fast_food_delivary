@@ -265,6 +265,10 @@ col {
   width: 100%;
   flex: 0 0 100%; }
 
+.col-8 {
+  width: 66%;
+  flex: 0 0 66%; }
+
 .col-6 {
   width: 48%;
   flex: 0 0 48%; }
@@ -277,6 +281,22 @@ col {
   width: 23%;
   flex: 0 0 23%; }
 
+.footer {
+  width: 100%;
+  background-color: #000;
+  padding: 10px 0;
+  text-align: center; }
+  .footer-text {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #000;
+    font-size: 1.25rem;
+    line-height: 25px;
+    padding: 20px 0;
+    margin-bottom: 0;
+    color: #fff; }
+
 .btn {
   color: #fff;
   background-color: #262222;
@@ -286,7 +306,9 @@ col {
   font-family: "Josefin Sans", sans-serif;
   text-decoration: none;
   display: inline-block;
-  box-shadow: 0 0 6px rgba(238, 126, 15, 0.56); }
+  box-shadow: 0 0 6px rgba(238, 126, 15, 0.56);
+  border: none;
+  cursor: pointer; }
   .btn:hover {
     background-color: #FF6600;
     box-shadow: 0 0 5px rgba(255, 102, 0, 0.5); }
@@ -359,7 +381,7 @@ col {
   width: 100%;
   padding: 50px 0; }
   .our-products .block {
-    padding: 15px; }
+    padding: 0; }
     .our-products .block .card {
       padding: 20px 0;
       position: relative;
@@ -368,7 +390,8 @@ col {
       transition: all 1s;
       cursor: pointer;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-      padding: 20px 0 0; }
+      padding: 0 0 10px;
+      border-radius: 0; }
       .our-products .block .card .card-body {
         padding: 15px; }
         .our-products .block .card .card-body .card-title {
@@ -384,3 +407,74 @@ col {
           font-size: 1.25rem;
           line-height: 25px;
           font-size: 1rem; }
+      .our-products .block .card .card-img {
+        width: 100%;
+        height: 200px; }
+        .our-products .block .card .card-img .img-fluid {
+          width: 100%;
+          height: 100%; }
+      .our-products .block .card .card-text {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 10px; }
+        .our-products .block .card .card-text .price {
+          font-family: "Josefin Sans", sans-serif;
+          font-weight: 500; }
+        .our-products .block .card .card-text .rate .fas:hover {
+          color: #FF6600; }
+      .our-products .block .card .btn {
+        padding: 12px 20px;
+        font-size: 1rem; }
+  .our-products .load-btn {
+    text-align: center;
+    margin-top: 30px; }
+
+.contact-us {
+  width: 100%;
+  padding: 50px 0; }
+  .contact-us .block {
+    margin: auto; }
+    .contact-us .block .form {
+      width: 100%;
+      padding: 50px 30px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-between; }
+      .contact-us .block .form-group {
+        width: 48%;
+        flex: 0 0 48%;
+        margin-bottom: 15px; }
+      .contact-us .block .form .message {
+        width: 100%;
+        flex: 0 0 100%; }
+        .contact-us .block .form .message textarea {
+          width: 100%;
+          height: 200px;
+          padding: 20px 15px;
+          font-family: "Josefin Sans", sans-serif;
+          font-weight: 500;
+          resize: vertical; }
+          .contact-us .block .form .message textarea:focus {
+            outline: unset;
+            border: 1px solid #FF6600; }
+      .contact-us .block .form-control {
+        width: 100%;
+        height: 45px;
+        padding: 20px 15px;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 500;
+        box-shadow: none; }
+        .contact-us .block .form-control:focus {
+          outline: unset;
+          border: 1px solid #FF6600;
+          box-shadow: none; }
+      .contact-us .block .form .button {
+        width: 100%;
+        flex: 0 0 100%;
+        text-align: center; }

@@ -1,0 +1,13 @@
+.footer{
+    width: 100%;
+    background-color: $black;
+    padding: 10px 0;
+    text-align: center;
+
+    &-text{
+        @include para-text;
+        padding: 20px 0;
+        margin-bottom: 0;
+        color: $white;
+    }
+}
