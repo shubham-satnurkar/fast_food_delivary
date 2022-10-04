@@ -254,7 +254,8 @@ p {
   flex-wrap: wrap;
   gap: 10px;
   flex-wrap: wrap;
-  gap: 15px; }
+  gap: 15px;
+  align-items: stretch; }
 
 col {
   width: auto;
@@ -269,7 +270,7 @@ col {
   flex: 0 0 48%; }
 
 .col-4 {
-  width: 33%;
+  width: 32%;
   flex: 0 0 32%; }
 
 .col-3 {
@@ -313,3 +314,73 @@ col {
       color: #000;
       font-size: 1.25rem;
       line-height: 25px; }
+
+.our-services {
+  width: 100%;
+  padding: 50px 0; }
+  .our-services .block {
+    padding: 0 15px; }
+    .our-services .block .card {
+      padding: 20px 0;
+      position: relative;
+      text-align: center;
+      border-radius: 20px;
+      transition: all 1s;
+      cursor: pointer;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); }
+      .our-services .block .card .card-body {
+        padding: 15px; }
+        .our-services .block .card .card-body .card-title {
+          font-family: "Josefin Sans", sans-serif;
+          font-weight: 500;
+          color: #000;
+          margin-bottom: 20px; }
+        .our-services .block .card .card-body .card-text {
+          font-family: "Josefin Sans", sans-serif;
+          font-weight: 300;
+          margin-bottom: 30px;
+          color: #000;
+          font-size: 1.25rem;
+          line-height: 25px;
+          font-size: 1rem; }
+      .our-services .block .card-img {
+        width: 50%;
+        height: 160px;
+        margin-bottom: 20px; }
+      .our-services .block .card:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        box-shadow: 0 0 6px rgba(238, 126, 15, 0.56); }
+        .our-services .block .card:hover .card-title {
+          color: #FF6600; }
+        .our-services .block .card:hover .card-text {
+          color: #fff; }
+
+.our-products {
+  width: 100%;
+  padding: 50px 0; }
+  .our-products .block {
+    padding: 15px; }
+    .our-products .block .card {
+      padding: 20px 0;
+      position: relative;
+      text-align: center;
+      border-radius: 20px;
+      transition: all 1s;
+      cursor: pointer;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+      padding: 20px 0 0; }
+      .our-products .block .card .card-body {
+        padding: 15px; }
+        .our-products .block .card .card-body .card-title {
+          font-family: "Josefin Sans", sans-serif;
+          font-weight: 500;
+          color: #000;
+          margin-bottom: 20px; }
+        .our-products .block .card .card-body .card-text {
+          font-family: "Josefin Sans", sans-serif;
+          font-weight: 300;
+          margin-bottom: 30px;
+          color: #000;
+          font-size: 1.25rem;
+          line-height: 25px;
+          font-size: 1rem; }

@@ -1,0 +1,13 @@
+.our-products{
+    width: 100%;
+    padding: 50px 0;
+
+    .block{
+        padding: 15px;
+        .card{
+            @include card;
+            padding: 20px 0 0;
+        }
+    }
+    
+}

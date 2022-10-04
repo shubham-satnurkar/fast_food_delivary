@@ -2,6 +2,7 @@
     @include flexbox;
     flex-wrap: wrap;
     gap: 15px;
+    align-items: stretch;
 }
 col{
     width: auto;
@@ -19,7 +20,7 @@ col{
     
 }
 .col-4{
-    width: 33%;
+    width: 32%;
     flex:  0 0 32%;
     
 }
